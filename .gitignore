@@ -1,0 +1,30 @@
+# Python specific
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.eggs/
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.venv/
+
+# Environment variables
+.env
+
+# IDE files
+.vscode/
+.idea/
+
+# Pytest cache
+.cache
+pytest_cache/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
