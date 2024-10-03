@@ -26,7 +26,13 @@ async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
         await ctx.send('Sorry, I am unable to understand.')
     else:
+        print(error)
         await ctx.send('Internal Error')
+
+
+@bot.event
+async def setup_hook():
+    await bot.load_extension('cogs.music')
 
 
 @bot.command()
